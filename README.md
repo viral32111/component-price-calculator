@@ -2,7 +2,7 @@
 
 A simple computer hardware component price calculator application for Android that I made back in 2020.
 
-![Component Price Calculator](/Screenshot.png)
+<img src="/Screenshot.png" alt="Component Price Calculator" height="600px" />
 
 ## License
 
