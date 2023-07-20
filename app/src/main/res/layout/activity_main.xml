@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity" >
+
+	<Button
+		android:id="@+id/btnCalculatePrice"
+		android:layout_width="212dp"
+		android:layout_height="49dp"
+		android:layout_marginStart="17dp"
+		android:layout_marginLeft="17dp"
+		android:layout_marginBottom="79dp"
+		android:onClick="onCalculatePricePressed"
+		android:text="@string/btnCalculatePrice"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/btnApplicationReset"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/etDiscountCode" />
+
+	<Button
+		android:id="@+id/btnApplicationAbout"
+		android:layout_width="94dp"
+		android:layout_height="41dp"
+		android:layout_marginStart="301dp"
+		android:layout_marginLeft="301dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginBottom="54dp"
+		android:onClick="onApplicationAboutPressed"
+		android:text="@string/btnApplicationAbout"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/btnApplicationReset" />
+
+	<Button
+		android:id="@+id/btnApplicationReset"
+		android:layout_width="158dp"
+		android:layout_height="49dp"
+		android:layout_marginStart="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginBottom="79dp"
+		android:onClick="onApplicationResetPressed"
+		android:text="@string/btnApplicationReset"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/btnCalculatePrice"
+		app:layout_constraintTop_toBottomOf="@+id/etDiscountCode" />
+
+	<TextView
+		android:id="@+id/tvGraphicsCard"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="17dp"
+		android:layout_marginLeft="17dp"
+		android:layout_marginTop="34dp"
+		android:layout_marginEnd="279dp"
+		android:layout_marginRight="279dp"
+		android:text="@string/tvGraphicsCard"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/spOperatingSystem" />
+
+	<Spinner
+		android:id="@+id/spGraphicsCard"
+		android:layout_width="378dp"
+		android:layout_height="28dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="7dp"
+		android:layout_marginEnd="17dp"
+		android:layout_marginRight="17dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tvGraphicsCard" />
+
+	<Spinner
+		android:id="@+id/spOperatingSystem"
+		android:layout_width="378dp"
+		android:layout_height="28dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="6dp"
+		android:layout_marginEnd="17dp"
+		android:layout_marginRight="17dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tvOperatingSystem" />
+
+	<TextView
+		android:id="@+id/tvOperatingSystem"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="33dp"
+		android:layout_marginEnd="249dp"
+		android:layout_marginRight="249dp"
+		android:text="@string/tvOperatingSystem"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/spProcessor" />
+
+	<Spinner
+		android:id="@+id/spProcessor"
+		android:layout_width="378dp"
+		android:layout_height="28dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="7dp"
+		android:layout_marginEnd="17dp"
+		android:layout_marginRight="17dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tvProcessor" />
+
+	<TextView
+		android:id="@+id/tvProcessor"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="29dp"
+		android:layout_marginEnd="312dp"
+		android:layout_marginRight="312dp"
+		android:text="@string/tvProcessor"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/spMemory" />
+
+	<TextView
+		android:id="@+id/tvDiscountCode"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="40dp"
+		android:layout_marginEnd="277dp"
+		android:layout_marginRight="277dp"
+		android:text="@string/tvDiscountCode"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/spGraphicsCard" />
+
+	<TextView
+		android:id="@+id/tvApplicationTitle"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="12dp"
+		android:layout_marginLeft="12dp"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="12dp"
+		android:layout_marginRight="12dp"
+		android:layout_marginBottom="666dp"
+		android:gravity="center"
+		android:text="@string/tvApplicationTitle"
+		android:textAllCaps="false"
+		android:textSize="28sp"
+		android:textStyle="bold"
+		android:typeface="sans"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<TextView
+		android:id="@+id/tvChassisPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="12dp"
+		android:layout_marginLeft="12dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginEnd="264dp"
+		android:layout_marginRight="264dp"
+		android:text="@string/tvChassisPrice"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tvApplicationTitle" />
+
+	<TextView
+		android:id="@+id/tvMemory"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="19dp"
+		android:layout_marginEnd="328dp"
+		android:layout_marginRight="328dp"
+		android:text="@string/tvMemory"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tvChassisPrice" />
+
+	<Spinner
+		android:id="@+id/spMemory"
+		android:layout_width="378dp"
+		android:layout_height="28dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="7dp"
+		android:layout_marginEnd="17dp"
+		android:layout_marginRight="17dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tvMemory" />
+
+	<EditText
+		android:id="@+id/etDiscountCode"
+		android:layout_width="301dp"
+		android:layout_height="46dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="8dp"
+		android:ems="10"
+		android:importantForAutofill="no"
+		android:inputType="textShortMessage|text|textCapCharacters"
+		app:layout_constraintEnd_toStartOf="@+id/btnDiscountCodeApply"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tvDiscountCode" />
+
+	<Button
+		android:id="@+id/btnDiscountCodeApply"
+		android:layout_width="73dp"
+		android:layout_height="47dp"
+		android:layout_marginTop="65dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginRight="16dp"
+		android:onClick="onDiscountCodeApplyPressed"
+		android:text="@string/btnDiscountCodeApply"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/etDiscountCode"
+		app:layout_constraintTop_toBottomOf="@+id/spGraphicsCard" />
+</androidx.constraintlayout.widget.ConstraintLayout>

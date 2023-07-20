@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Component Price Calculator</string>
+    <string name="tvApplicationTitle"><u>Component Price Calculator</u></string>
+    <string name="tvChassisPrice">Basic Case: £75</string>
+    <string name="tvMemory"><u>Memory</u></string>
+    <string name="tvProcessor"><u>Processor</u></string>
+    <string name="tvOperatingSystem"><u>Operating System</u></string>
+    <string name="tvGraphicsCard"><u>Graphics Card</u></string>
+    <string name="tvDiscountCode"><u>Discount Code</u></string>
+    <string name="btnDiscountCodeApply">APPLY</string>
+    <string name="btnCalculatePrice">CALCULATE PRICE</string>
+    <string name="btnApplicationReset">RESET</string>
+    <string name="btnApplicationAbout">ABOUT</string>
+
+    <string name="tvApplicationVersion"><b>Version:</b> 1.1.0</string>
+    <string name="tvApplicationDeveloper"><b>Developer:</b> viral32111</string>
+    <string name="tvApplicationDate"><b>Creation Date:</b> 23/03/2020</string>
+    <string name="tvApplicationUsage"><b>Usage:</b> Select one component from each of the drop downs, enter the discount code if applicable then click Calculate Price.</string>
+</resources>
